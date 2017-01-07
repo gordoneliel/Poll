@@ -1,14 +1,17 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ObA-dk-sSI">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ObA-dk-sSI">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Messages View Controller-->
         <scene sceneID="7MM-of-jgj">
             <objects>
-                <viewController id="ObA-dk-sSI" customClass="MessagesViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ObA-dk-sSI" customClass="MessagesViewController" customModule="MessagesExtension" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qkL-Od-lgU"/>
                         <viewControllerLayoutGuide type="bottom" id="n38-gi-rB5"/>
@@ -16,24 +19,185 @@
                     <view key="view" contentMode="scaleToFill" id="zMn-AG-sqS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="528"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d1e-fi-ked">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="centerY" secondItem="d1e-fi-ked" secondAttribute="centerY" id="H0s-hz-dDP"/>
-                            <constraint firstAttribute="centerX" secondItem="d1e-fi-ked" secondAttribute="centerX" id="wFy-hW-Bib"/>
-                        </constraints>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="528"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X47-rx-isc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-8" y="122"/>
+        </scene>
+        <!--Polls View Controller-->
+        <scene sceneID="Lha-pI-6KE">
+            <objects>
+                <viewController storyboardIdentifier="PollsViewController" id="sLO-kI-ak9" customClass="PollsViewController" customModule="MessagesExtension" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yJj-oz-Aue"/>
+                        <viewControllerLayoutGuide type="bottom" id="KhV-aM-6kL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8CO-oQ-dTv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="528"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="crP-nd-usB">
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="3cH-ud-iVX">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95399530444818648" green="0.95399530444818648" blue="0.95399530444818648" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="crP-nd-usB" secondAttribute="trailing" id="LYz-QJ-1lp"/>
+                            <constraint firstItem="crP-nd-usB" firstAttribute="leading" secondItem="8CO-oQ-dTv" secondAttribute="leading" id="Vz9-Ke-o2M"/>
+                            <constraint firstAttribute="bottom" secondItem="crP-nd-usB" secondAttribute="bottom" id="f37-QI-mES"/>
+                            <constraint firstItem="crP-nd-usB" firstAttribute="top" secondItem="8CO-oQ-dTv" secondAttribute="top" id="jIi-yh-doR"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="528"/>
+                    <connections>
+                        <outlet property="collectionView" destination="crP-nd-usB" id="90w-DL-dZT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VwQ-UW-boZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="703" y="123"/>
+        </scene>
+        <!--Create Poll View Controller-->
+        <scene sceneID="4em-OT-G6R">
+            <objects>
+                <viewController storyboardIdentifier="CreatePollViewController" id="I92-8P-G1P" customClass="CreatePollViewController" customModule="MessagesExtension" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rEL-UL-IBQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Lps-W7-3Iy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DaN-Ab-DaK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="zaY-lw-6yc">
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="H6S-UF-hvK">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xpf-K7-cIr">
+                                <color key="backgroundColor" red="0.0321960726" green="0.64378972710000004" blue="0.9478829339" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="1Rp-4u-QaX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <state key="normal" title="Create Poll">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="disabled">
+                                    <color key="titleColor" red="0.75797020050734032" green="0.76594883419689119" blue="0.76594883419689119" alpha="0.41177926936619719" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xkh-AR-WXY">
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Question" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BsI-Gg-fVF">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="y5D-H0-1st"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="MOM-sJ-BHu">
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hY3-OJ-pqt">
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="128" id="csb-eg-eY6"/>
+                                                </constraints>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MB7-ia-UnB">
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q3Q-9y-TBz">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="300" id="EvI-Rr-2tc"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="458" id="zh7-q3-yC3"/>
+                                        </constraints>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KeS-zq-aaU">
+                                        <color key="backgroundColor" red="0.0321960726" green="0.64378972710000004" blue="0.9478829339" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="Dmc-SV-sGx"/>
+                                        </constraints>
+                                        <state key="normal" title="Create Poll">
+                                            <color key="titleColor" red="0.97463973449999997" green="0.97463973449999997" blue="0.97463973449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="KeS-zq-aaU" secondAttribute="bottom" constant="15" id="09c-Yl-uFC"/>
+                                    <constraint firstItem="MOM-sJ-BHu" firstAttribute="top" secondItem="BsI-Gg-fVF" secondAttribute="bottom" constant="30" id="CMx-9r-Txo"/>
+                                    <constraint firstItem="BsI-Gg-fVF" firstAttribute="top" secondItem="Xkh-AR-WXY" secondAttribute="top" constant="25" id="Vdg-SP-RSJ"/>
+                                    <constraint firstItem="BsI-Gg-fVF" firstAttribute="leading" secondItem="Xkh-AR-WXY" secondAttribute="leading" constant="15" id="aBJ-Bb-jIQ"/>
+                                    <constraint firstItem="MOM-sJ-BHu" firstAttribute="trailing" secondItem="BsI-Gg-fVF" secondAttribute="trailing" id="eam-3w-foN"/>
+                                    <constraint firstItem="KeS-zq-aaU" firstAttribute="leading" secondItem="Xkh-AR-WXY" secondAttribute="leading" constant="15" id="iDc-n0-2Va"/>
+                                    <constraint firstAttribute="trailing" secondItem="KeS-zq-aaU" secondAttribute="trailing" constant="15" id="koa-tc-71T"/>
+                                    <constraint firstAttribute="bottom" secondItem="BsI-Gg-fVF" secondAttribute="bottom" constant="488" id="lDf-GG-73o"/>
+                                    <constraint firstItem="BsI-Gg-fVF" firstAttribute="centerX" secondItem="Xkh-AR-WXY" secondAttribute="centerX" id="qMl-g8-nZU"/>
+                                    <constraint firstItem="MOM-sJ-BHu" firstAttribute="leading" secondItem="BsI-Gg-fVF" secondAttribute="leading" id="suX-Wc-R9r"/>
+                                    <constraint firstAttribute="bottom" secondItem="MOM-sJ-BHu" secondAttribute="bottom" constant="247" id="w0d-eh-TTX"/>
+                                    <constraint firstAttribute="trailing" secondItem="BsI-Gg-fVF" secondAttribute="trailing" constant="15" id="ys6-W1-0sC"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92646939766424874" green="0.92646939766424874" blue="0.92646939766424874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xpf-K7-cIr" firstAttribute="top" secondItem="zaY-lw-6yc" secondAttribute="bottom" id="1Yw-PK-iMv"/>
+                            <constraint firstAttribute="trailing" secondItem="Xkh-AR-WXY" secondAttribute="trailing" id="9HJ-Xb-e3c"/>
+                            <constraint firstItem="zaY-lw-6yc" firstAttribute="leading" secondItem="DaN-Ab-DaK" secondAttribute="leading" id="R7O-cU-Ghb"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Xkh-AR-WXY" secondAttribute="bottom" id="YZP-ix-Hbf"/>
+                            <constraint firstItem="Lps-W7-3Iy" firstAttribute="top" secondItem="xpf-K7-cIr" secondAttribute="bottom" id="b7d-cR-edp"/>
+                            <constraint firstAttribute="trailing" secondItem="xpf-K7-cIr" secondAttribute="trailing" id="cNG-Oi-NyR"/>
+                            <constraint firstAttribute="trailing" secondItem="zaY-lw-6yc" secondAttribute="trailing" id="d0C-j4-ay5"/>
+                            <constraint firstItem="Xkh-AR-WXY" firstAttribute="leading" secondItem="DaN-Ab-DaK" secondAttribute="leading" id="iXb-5a-eYA"/>
+                            <constraint firstItem="Xkh-AR-WXY" firstAttribute="top" secondItem="DaN-Ab-DaK" secondAttribute="top" id="jVH-qZ-oIp"/>
+                            <constraint firstItem="zaY-lw-6yc" firstAttribute="top" secondItem="DaN-Ab-DaK" secondAttribute="top" id="odc-oa-0iT"/>
+                            <constraint firstItem="xpf-K7-cIr" firstAttribute="leading" secondItem="DaN-Ab-DaK" secondAttribute="leading" id="yES-gE-xOD"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Xkh-AR-WXY"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="zaY-lw-6yc" id="F1d-Fy-hqw"/>
+                        <outlet property="createPollButton" destination="xpf-K7-cIr" id="tta-vD-xSj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Xj-9j-zNR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1383" y="185"/>
         </scene>
     </scenes>
 </document>

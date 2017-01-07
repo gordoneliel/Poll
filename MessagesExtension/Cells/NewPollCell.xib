@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="NewPollCell" id="gTV-IL-0wX" customClass="NewPollCell" customModule="MessagesExtension" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="233" height="180"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="233" height="180"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mHS-Ly-r9O">
+                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                        <state key="normal" title="+">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="addPressed:" destination="gTV-IL-0wX" eventType="touchUpInside" id="5R5-e8-p5T"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.0321960726" green="0.64378972710000004" blue="0.9478829339" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="mHS-Ly-r9O" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="3mE-ND-EgG"/>
+                <constraint firstItem="mHS-Ly-r9O" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="8A1-b0-cbG"/>
+                <constraint firstAttribute="trailing" secondItem="mHS-Ly-r9O" secondAttribute="trailing" id="lpl-b1-eSE"/>
+                <constraint firstAttribute="bottom" secondItem="mHS-Ly-r9O" secondAttribute="bottom" id="pD9-eh-4sn"/>
+            </constraints>
+            <size key="customSize" width="233" height="180"/>
+            <connections>
+                <outlet property="addPollButton" destination="mHS-Ly-r9O" id="iQB-ll-KOR"/>
+            </connections>
+            <point key="canvasLocation" x="-40.5" y="-82"/>
+        </collectionViewCell>
+    </objects>
+</document>

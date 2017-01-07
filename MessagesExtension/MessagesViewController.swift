@@ -10,24 +10,23 @@ import UIKit
 import Messages
 
 class MessagesViewController: MSMessagesAppViewController {
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
     // MARK: - Conversation Handling
     
     override func willBecomeActive(with conversation: MSConversation) {
-        // Called when the extension is about to move from the inactive to active state.
-        // This will happen when the extension is about to present UI.
+        super.willBecomeActive(with: conversation)
         
-        // Use this method to configure the extension and restore previously stored state.
+        let storyboard = UIStoryboard(storyboard: .main)
+        
+        switch presentationStyle {
+        case .compact:
+            let viewController: PollsViewController = storyboard.instantiate()
+            viewController.delegate = self
+            presentOn(view: viewController)
+        case .expanded:
+            let viewController: CreatePollViewController = storyboard.instantiate()
+            presentOn(view: viewController)
+
+        }
     }
     
     override func didResignActive(with conversation: MSConversation) {
@@ -58,9 +57,18 @@ class MessagesViewController: MSMessagesAppViewController {
     }
     
     override func willTransition(to presentationStyle: MSMessagesAppPresentationStyle) {
-        // Called before the extension transitions to a new presentation style.
-    
-        // Use this method to prepare for the change in presentation style.
+        // Present the view controller appropriate for the conversation and presentation style.
+        let storyboard = UIStoryboard(storyboard: .main)
+        
+        switch presentationStyle {
+        case .compact:
+            let viewController: PollsViewController = storyboard.instantiate()
+            viewController.delegate = self
+            presentOn(view: viewController)
+        case .expanded:
+            let viewController: CreatePollViewController = storyboard.instantiate()
+            presentOn(view: viewController)
+        }
     }
     
     override func didTransition(to presentationStyle: MSMessagesAppPresentationStyle) {
@@ -68,5 +76,12 @@ class MessagesViewController: MSMessagesAppViewController {
     
         // Use this method to finalize any behaviors associated with the change in presentation style.
     }
-
 }
+
+extension MessagesViewController: PollsViewControllerDelegate {
+    func pollsViewControllerDidSelectAdd(_ controller: PollsViewController) {
+        requestPresentationStyle(.expanded)
+    }
+}
+
+extension MessagesViewController: Presentable {}

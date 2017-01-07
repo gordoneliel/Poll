@@ -7,12 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0508B8081D9076B3001BDEE5 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0508B8071D9076B3001BDEE5 /* IntentHandler.swift */; };
+		0508B80F1D9076B3001BDEE5 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05647D141D906F63007A909C /* IntentsUI.framework */; };
+		0508B8121D9076B3001BDEE5 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0508B8111D9076B3001BDEE5 /* IntentViewController.swift */; };
+		0508B8151D9076B3001BDEE5 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0508B8131D9076B3001BDEE5 /* MainInterface.storyboard */; };
 		0539BA7F1D8E524800B609D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0539BA7E1D8E524800B609D0 /* Assets.xcassets */; };
 		0539BA861D8E524800B609D0 /* MessagesExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0539BA851D8E524800B609D0 /* MessagesExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		0539BA8B1D8E524800B609D0 /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0539BA8A1D8E524800B609D0 /* Messages.framework */; };
 		0539BA8E1D8E524800B609D0 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0539BA8D1D8E524800B609D0 /* MessagesViewController.swift */; };
 		0539BA911D8E524800B609D0 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0539BA8F1D8E524800B609D0 /* MainInterface.storyboard */; };
 		0539BA931D8E524800B609D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0539BA921D8E524800B609D0 /* Assets.xcassets */; };
+		0539BAA41D8E55E200B609D0 /* Pollz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0539BAA31D8E55E200B609D0 /* Pollz.swift */; };
+		0539BAAD1D8E617D00B609D0 /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0539BAAC1D8E617D00B609D0 /* Presentable.swift */; };
+		0539BAAF1D8E633900B609D0 /* PollsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0539BAAE1D8E633900B609D0 /* PollsViewController.swift */; };
+		0539BAB21D8E639B00B609D0 /* PollsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0539BAB11D8E639B00B609D0 /* PollsViewModel.swift */; };
+		0539BAB51D8E646400B609D0 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0539BAB41D8E646400B609D0 /* Question.swift */; };
+		0539BAB71D8E651600B609D0 /* AnswerOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0539BAB61D8E651600B609D0 /* AnswerOption.swift */; };
+		0539BAB91D8E656A00B609D0 /* Poll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0539BAB81D8E656A00B609D0 /* Poll.swift */; };
+		0539BABC1D8E682C00B609D0 /* UIStoryboard+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0539BABB1D8E682C00B609D0 /* UIStoryboard+Extensions.swift */; };
+		0539BABF1D8E737200B609D0 /* PollSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0539BABE1D8E737200B609D0 /* PollSectionModel.swift */; };
+		0539BAC31D8E753700B609D0 /* PollCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0539BAC11D8E753700B609D0 /* PollCell.swift */; };
+		0539BAC41D8E753700B609D0 /* PollCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0539BAC21D8E753700B609D0 /* PollCell.xib */; };
+		0539BAC71D8E77E500B609D0 /* NewPollCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0539BAC51D8E77E500B609D0 /* NewPollCell.swift */; };
+		0539BAC81D8E77E500B609D0 /* NewPollCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0539BAC61D8E77E500B609D0 /* NewPollCell.xib */; };
+		055328A31D8EBDC7006FC76E /* CreatePollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055328A21D8EBDC7006FC76E /* CreatePollViewController.swift */; };
+		055328A51D8EC766006FC76E /* CreatePollViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055328A41D8EC766006FC76E /* CreatePollViewModel.swift */; };
+		055328A71D8F4350006FC76E /* CreatePollSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055328A61D8F4350006FC76E /* CreatePollSectionModel.swift */; };
+		05647CFE1D8F5085007A909C /* QuestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05647CFC1D8F5085007A909C /* QuestionCell.swift */; };
+		05647CFF1D8F5085007A909C /* QuestionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05647CFD1D8F5085007A909C /* QuestionCell.xib */; };
+		05647D021D8F561C007A909C /* CreatePollFooterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05647D001D8F561C007A909C /* CreatePollFooterCell.swift */; };
+		05647D031D8F561C007A909C /* CreatePollFooterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05647D011D8F561C007A909C /* CreatePollFooterCell.xib */; };
+		05647D061D8F71DA007A909C /* BasicHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05647D041D8F71DA007A909C /* BasicHeaderCell.swift */; };
+		05647D071D8F71DA007A909C /* BasicHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05647D051D8F71DA007A909C /* BasicHeaderCell.xib */; };
+		05647D0A1D8F7431007A909C /* AnswerOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05647D081D8F7431007A909C /* AnswerOptionCell.swift */; };
+		05647D0B1D8F7431007A909C /* AnswerOptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05647D091D8F7431007A909C /* AnswerOptionCell.xib */; };
+		05647D0E1D8F7903007A909C /* CreatePollValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05647D0D1D8F7903007A909C /* CreatePollValidator.swift */; };
+		05647D151D906F63007A909C /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05647D141D906F63007A909C /* IntentsUI.framework */; };
+		05647D211D9071EA007A909C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05647D201D9071EA007A909C /* MapKit.framework */; };
+		0599822F1E20B9F000873337 /* CreatePollAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0599822E1E20B9F000873337 /* CreatePollAction.swift */; };
+		D80AE07F11CA7603B2A6E9EA /* Pods_MessagesExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F20550D76F0745B6498AF7CF /* Pods_MessagesExtension.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		FC03174389A2FAC571283251 /* Pods_Poll.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE2E80873C26007EA92742A0 /* Pods_Poll.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +74,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0508B8051D9076B3001BDEE5 /* BottleIntent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BottleIntent.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0508B8071D9076B3001BDEE5 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		0508B8091D9076B3001BDEE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0508B80E1D9076B3001BDEE5 /* BottleIntentUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BottleIntentUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0508B8111D9076B3001BDEE5 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		0508B8141D9076B3001BDEE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		0508B8161D9076B3001BDEE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0539BA7B1D8E524800B609D0 /* Poll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Poll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0539BA7E1D8E524800B609D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0539BA801D8E524800B609D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,27 +90,117 @@
 		0539BA901D8E524800B609D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		0539BA921D8E524800B609D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0539BA941D8E524800B609D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0539BAA31D8E55E200B609D0 /* Pollz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Pollz.swift; path = Models/Pollz.swift; sourceTree = "<group>"; };
+		0539BAAC1D8E617D00B609D0 /* Presentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Presentable.swift; path = Protocols/Presentable.swift; sourceTree = "<group>"; };
+		0539BAAE1D8E633900B609D0 /* PollsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PollsViewController.swift; path = ViewControllers/PollsViewController.swift; sourceTree = "<group>"; };
+		0539BAB11D8E639B00B609D0 /* PollsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollsViewModel.swift; sourceTree = "<group>"; };
+		0539BAB41D8E646400B609D0 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Question.swift; path = PersistedModels/Question.swift; sourceTree = "<group>"; };
+		0539BAB61D8E651600B609D0 /* AnswerOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnswerOption.swift; path = PersistedModels/AnswerOption.swift; sourceTree = "<group>"; };
+		0539BAB81D8E656A00B609D0 /* Poll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Poll.swift; path = PersistedModels/Poll.swift; sourceTree = "<group>"; };
+		0539BABB1D8E682C00B609D0 /* UIStoryboard+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIStoryboard+Extensions.swift"; path = "Extensions/UIStoryboard+Extensions.swift"; sourceTree = "<group>"; };
+		0539BABE1D8E737200B609D0 /* PollSectionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PollSectionModel.swift; path = SectionModels/PollSectionModel.swift; sourceTree = "<group>"; };
+		0539BAC11D8E753700B609D0 /* PollCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PollCell.swift; path = Cells/PollCell.swift; sourceTree = "<group>"; };
+		0539BAC21D8E753700B609D0 /* PollCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PollCell.xib; path = Cells/PollCell.xib; sourceTree = "<group>"; };
+		0539BAC51D8E77E500B609D0 /* NewPollCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewPollCell.swift; path = Cells/NewPollCell.swift; sourceTree = "<group>"; };
+		0539BAC61D8E77E500B609D0 /* NewPollCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NewPollCell.xib; path = Cells/NewPollCell.xib; sourceTree = "<group>"; };
+		055328A21D8EBDC7006FC76E /* CreatePollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreatePollViewController.swift; path = ViewControllers/CreatePollViewController.swift; sourceTree = "<group>"; };
+		055328A41D8EC766006FC76E /* CreatePollViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreatePollViewModel.swift; path = ViewModels/CreatePollViewModel.swift; sourceTree = "<group>"; };
+		055328A61D8F4350006FC76E /* CreatePollSectionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreatePollSectionModel.swift; path = SectionModels/CreatePollSectionModel.swift; sourceTree = "<group>"; };
+		05647CFC1D8F5085007A909C /* QuestionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuestionCell.swift; path = Cells/QuestionCell.swift; sourceTree = "<group>"; };
+		05647CFD1D8F5085007A909C /* QuestionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = QuestionCell.xib; path = Cells/QuestionCell.xib; sourceTree = "<group>"; };
+		05647D001D8F561C007A909C /* CreatePollFooterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreatePollFooterCell.swift; path = Cells/CreatePollFooterCell.swift; sourceTree = "<group>"; };
+		05647D011D8F561C007A909C /* CreatePollFooterCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CreatePollFooterCell.xib; path = Cells/CreatePollFooterCell.xib; sourceTree = "<group>"; };
+		05647D041D8F71DA007A909C /* BasicHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BasicHeaderCell.swift; path = Cells/BasicHeaderCell.swift; sourceTree = "<group>"; };
+		05647D051D8F71DA007A909C /* BasicHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BasicHeaderCell.xib; path = Cells/BasicHeaderCell.xib; sourceTree = "<group>"; };
+		05647D081D8F7431007A909C /* AnswerOptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnswerOptionCell.swift; path = Cells/AnswerOptionCell.swift; sourceTree = "<group>"; };
+		05647D091D8F7431007A909C /* AnswerOptionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AnswerOptionCell.xib; path = Cells/AnswerOptionCell.xib; sourceTree = "<group>"; };
+		05647D0D1D8F7903007A909C /* CreatePollValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreatePollValidator.swift; path = Validators/CreatePollValidator.swift; sourceTree = "<group>"; };
+		05647D131D906F63007A909C /* Poll Intent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Poll Intent.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		05647D141D906F63007A909C /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		05647D201D9071EA007A909C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		0599822E1E20B9F000873337 /* CreatePollAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreatePollAction.swift; path = Actions/CreatePollAction.swift; sourceTree = "<group>"; };
+		09D30C96B53D220E94C92626 /* Pods-MessagesExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessagesExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-MessagesExtension/Pods-MessagesExtension.release.xcconfig"; sourceTree = "<group>"; };
+		8C972EAA80DB4A7E3C8437D6 /* Pods-MessagesExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessagesExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MessagesExtension/Pods-MessagesExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		91AC2A4938085FFE3B5F6D31 /* Pods-Poll.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Poll.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Poll/Pods-Poll.debug.xcconfig"; sourceTree = "<group>"; };
+		BE2E80873C26007EA92742A0 /* Pods_Poll.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Poll.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7E54836882BFB983FA33273 /* Pods-Poll.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Poll.release.xcconfig"; path = "Pods/Target Support Files/Pods-Poll/Pods-Poll.release.xcconfig"; sourceTree = "<group>"; };
+		F20550D76F0745B6498AF7CF /* Pods_MessagesExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MessagesExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0508B8021D9076B3001BDEE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0508B80B1D9076B3001BDEE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0508B80F1D9076B3001BDEE5 /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0539BA821D8E524800B609D0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0539BA8B1D8E524800B609D0 /* Messages.framework in Frameworks */,
+				D80AE07F11CA7603B2A6E9EA /* Pods_MessagesExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05647D101D906F63007A909C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05647D211D9071EA007A909C /* MapKit.framework in Frameworks */,
+				05647D151D906F63007A909C /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3853878F353408CD6C2EA22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC03174389A2FAC571283251 /* Pods_Poll.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0508B8061D9076B3001BDEE5 /* BottleIntent */ = {
+			isa = PBXGroup;
+			children = (
+				0508B8071D9076B3001BDEE5 /* IntentHandler.swift */,
+				0508B8091D9076B3001BDEE5 /* Info.plist */,
+			);
+			path = BottleIntent;
+			sourceTree = "<group>";
+		};
+		0508B8101D9076B3001BDEE5 /* BottleIntentUI */ = {
+			isa = PBXGroup;
+			children = (
+				0508B8111D9076B3001BDEE5 /* IntentViewController.swift */,
+				0508B8131D9076B3001BDEE5 /* MainInterface.storyboard */,
+				0508B8161D9076B3001BDEE5 /* Info.plist */,
+			);
+			path = BottleIntentUI;
+			sourceTree = "<group>";
+		};
 		0539BA741D8E524800B609D0 = {
 			isa = PBXGroup;
 			children = (
 				0539BA7D1D8E524800B609D0 /* Poll */,
 				0539BA8C1D8E524800B609D0 /* MessagesExtension */,
+				0508B8061D9076B3001BDEE5 /* BottleIntent */,
+				0508B8101D9076B3001BDEE5 /* BottleIntentUI */,
 				0539BA891D8E524800B609D0 /* Frameworks */,
 				0539BA7C1D8E524800B609D0 /* Products */,
+				8E104F8392FDAE8B0A9D07C9 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,6 +209,9 @@
 			children = (
 				0539BA7B1D8E524800B609D0 /* Poll.app */,
 				0539BA851D8E524800B609D0 /* MessagesExtension.appex */,
+				05647D131D906F63007A909C /* Poll Intent.appex */,
+				0508B8051D9076B3001BDEE5 /* BottleIntent.appex */,
+				0508B80E1D9076B3001BDEE5 /* BottleIntentUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,7 +228,11 @@
 		0539BA891D8E524800B609D0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				05647D201D9071EA007A909C /* MapKit.framework */,
 				0539BA8A1D8E524800B609D0 /* Messages.framework */,
+				F20550D76F0745B6498AF7CF /* Pods_MessagesExtension.framework */,
+				BE2E80873C26007EA92742A0 /* Pods_Poll.framework */,
+				05647D141D906F63007A909C /* IntentsUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -102,6 +240,16 @@
 		0539BA8C1D8E524800B609D0 /* MessagesExtension */ = {
 			isa = PBXGroup;
 			children = (
+				0599822D1E20B9C600873337 /* Actions */,
+				05647D0C1D8F78E9007A909C /* Validators */,
+				0539BAC01D8E752100B609D0 /* Cells */,
+				0539BABD1D8E735B00B609D0 /* SectionModels */,
+				0539BABA1D8E681000B609D0 /* Extensions */,
+				0539BAB31D8E643900B609D0 /* PersistedModels */,
+				0539BAB01D8E637F00B609D0 /* ViewModels */,
+				0539BAAB1D8E616A00B609D0 /* Protocols */,
+				0539BAA81D8E5D5E00B609D0 /* ViewControllers */,
+				0539BAA51D8E55E900B609D0 /* Models */,
 				0539BA8D1D8E524800B609D0 /* MessagesViewController.swift */,
 				0539BA8F1D8E524800B609D0 /* MainInterface.storyboard */,
 				0539BA921D8E524800B609D0 /* Assets.xcassets */,
@@ -110,15 +258,159 @@
 			path = MessagesExtension;
 			sourceTree = "<group>";
 		};
+		0539BAA51D8E55E900B609D0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0539BAA31D8E55E200B609D0 /* Pollz.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		0539BAA81D8E5D5E00B609D0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0539BAAE1D8E633900B609D0 /* PollsViewController.swift */,
+				055328A21D8EBDC7006FC76E /* CreatePollViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0539BAAB1D8E616A00B609D0 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				0539BAAC1D8E617D00B609D0 /* Presentable.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		0539BAB01D8E637F00B609D0 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				0539BAB11D8E639B00B609D0 /* PollsViewModel.swift */,
+				055328A41D8EC766006FC76E /* CreatePollViewModel.swift */,
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		0539BAB31D8E643900B609D0 /* PersistedModels */ = {
+			isa = PBXGroup;
+			children = (
+				0539BAB41D8E646400B609D0 /* Question.swift */,
+				0539BAB61D8E651600B609D0 /* AnswerOption.swift */,
+				0539BAB81D8E656A00B609D0 /* Poll.swift */,
+			);
+			name = PersistedModels;
+			sourceTree = "<group>";
+		};
+		0539BABA1D8E681000B609D0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0539BABB1D8E682C00B609D0 /* UIStoryboard+Extensions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		0539BABD1D8E735B00B609D0 /* SectionModels */ = {
+			isa = PBXGroup;
+			children = (
+				0539BABE1D8E737200B609D0 /* PollSectionModel.swift */,
+				055328A61D8F4350006FC76E /* CreatePollSectionModel.swift */,
+			);
+			name = SectionModels;
+			sourceTree = "<group>";
+		};
+		0539BAC01D8E752100B609D0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0539BAC11D8E753700B609D0 /* PollCell.swift */,
+				0539BAC21D8E753700B609D0 /* PollCell.xib */,
+				0539BAC51D8E77E500B609D0 /* NewPollCell.swift */,
+				0539BAC61D8E77E500B609D0 /* NewPollCell.xib */,
+				05647CFC1D8F5085007A909C /* QuestionCell.swift */,
+				05647CFD1D8F5085007A909C /* QuestionCell.xib */,
+				05647D081D8F7431007A909C /* AnswerOptionCell.swift */,
+				05647D091D8F7431007A909C /* AnswerOptionCell.xib */,
+				05647D001D8F561C007A909C /* CreatePollFooterCell.swift */,
+				05647D011D8F561C007A909C /* CreatePollFooterCell.xib */,
+				05647D041D8F71DA007A909C /* BasicHeaderCell.swift */,
+				05647D051D8F71DA007A909C /* BasicHeaderCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		05647D0C1D8F78E9007A909C /* Validators */ = {
+			isa = PBXGroup;
+			children = (
+				05647D0D1D8F7903007A909C /* CreatePollValidator.swift */,
+			);
+			name = Validators;
+			sourceTree = "<group>";
+		};
+		0599822D1E20B9C600873337 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				0599822E1E20B9F000873337 /* CreatePollAction.swift */,
+			);
+			name = Actions;
+			sourceTree = "<group>";
+		};
+		8E104F8392FDAE8B0A9D07C9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8C972EAA80DB4A7E3C8437D6 /* Pods-MessagesExtension.debug.xcconfig */,
+				09D30C96B53D220E94C92626 /* Pods-MessagesExtension.release.xcconfig */,
+				91AC2A4938085FFE3B5F6D31 /* Pods-Poll.debug.xcconfig */,
+				E7E54836882BFB983FA33273 /* Pods-Poll.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0508B8041D9076B3001BDEE5 /* BottleIntent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0508B8171D9076B3001BDEE5 /* Build configuration list for PBXNativeTarget "BottleIntent" */;
+			buildPhases = (
+				0508B8011D9076B3001BDEE5 /* Sources */,
+				0508B8021D9076B3001BDEE5 /* Frameworks */,
+				0508B8031D9076B3001BDEE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BottleIntent;
+			productName = BottleIntent;
+			productReference = 0508B8051D9076B3001BDEE5 /* BottleIntent.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		0508B80D1D9076B3001BDEE5 /* BottleIntentUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0508B81A1D9076B3001BDEE5 /* Build configuration list for PBXNativeTarget "BottleIntentUI" */;
+			buildPhases = (
+				0508B80A1D9076B3001BDEE5 /* Sources */,
+				0508B80B1D9076B3001BDEE5 /* Frameworks */,
+				0508B80C1D9076B3001BDEE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BottleIntentUI;
+			productName = BottleIntentUI;
+			productReference = 0508B80E1D9076B3001BDEE5 /* BottleIntentUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		0539BA7A1D8E524800B609D0 /* Poll */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0539BA9B1D8E524800B609D0 /* Build configuration list for PBXNativeTarget "Poll" */;
 			buildPhases = (
+				12FA63D3B12228104043DB32 /* [CP] Check Pods Manifest.lock */,
 				0539BA791D8E524800B609D0 /* Resources */,
 				0539BA9A1D8E524800B609D0 /* Embed App Extensions */,
+				B3853878F353408CD6C2EA22 /* Frameworks */,
+				E08FB5A9573AD37E101D8106 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -134,9 +426,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0539BA971D8E524800B609D0 /* Build configuration list for PBXNativeTarget "MessagesExtension" */;
 			buildPhases = (
+				D18C3D080BF294296D544365 /* [CP] Check Pods Manifest.lock */,
 				0539BA811D8E524800B609D0 /* Sources */,
 				0539BA821D8E524800B609D0 /* Frameworks */,
 				0539BA831D8E524800B609D0 /* Resources */,
+				D2C75F80D4F1DDA6F0179BEB /* [CP] Copy Pods Resources */,
+				F1A1B1E7FD84737C6C8B7942 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -146,6 +441,23 @@
 			productName = MessagesExtension;
 			productReference = 0539BA851D8E524800B609D0 /* MessagesExtension.appex */;
 			productType = "com.apple.product-type.app-extension.messages";
+		};
+		05647D121D906F63007A909C /* Poll Intent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05647D1F1D906F63007A909C /* Build configuration list for PBXNativeTarget "Poll Intent" */;
+			buildPhases = (
+				05647D0F1D906F63007A909C /* Sources */,
+				05647D101D906F63007A909C /* Frameworks */,
+				05647D111D906F63007A909C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Poll Intent";
+			productName = "Poll Intent";
+			productReference = 05647D131D906F63007A909C /* Poll Intent.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -157,15 +469,35 @@
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Eliel Gordon";
 				TargetAttributes = {
+					0508B8041D9076B3001BDEE5 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = F7AL96RPTB;
+						ProvisioningStyle = Automatic;
+					};
+					0508B80D1D9076B3001BDEE5 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = F7AL96RPTB;
+						ProvisioningStyle = Automatic;
+					};
 					0539BA7A1D8E524800B609D0 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = U8XN6EMRDC;
+						DevelopmentTeam = 7KJQYUXKM6;
 						ProvisioningStyle = Automatic;
 					};
 					0539BA841D8E524800B609D0 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = U8XN6EMRDC;
+						DevelopmentTeam = 7KJQYUXKM6;
 						ProvisioningStyle = Automatic;
+					};
+					05647D121D906F63007A909C = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = F7AL96RPTB;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -184,11 +516,29 @@
 			targets = (
 				0539BA7A1D8E524800B609D0 /* Poll */,
 				0539BA841D8E524800B609D0 /* MessagesExtension */,
+				05647D121D906F63007A909C /* Poll Intent */,
+				0508B8041D9076B3001BDEE5 /* BottleIntent */,
+				0508B80D1D9076B3001BDEE5 /* BottleIntentUI */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0508B8031D9076B3001BDEE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0508B80C1D9076B3001BDEE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0508B8151D9076B3001BDEE5 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0539BA791D8E524800B609D0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -201,19 +551,153 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0539BAC41D8E753700B609D0 /* PollCell.xib in Resources */,
+				05647D031D8F561C007A909C /* CreatePollFooterCell.xib in Resources */,
+				0539BAC81D8E77E500B609D0 /* NewPollCell.xib in Resources */,
+				05647CFF1D8F5085007A909C /* QuestionCell.xib in Resources */,
 				0539BA931D8E524800B609D0 /* Assets.xcassets in Resources */,
 				0539BA911D8E524800B609D0 /* MainInterface.storyboard in Resources */,
+				05647D0B1D8F7431007A909C /* AnswerOptionCell.xib in Resources */,
+				05647D071D8F71DA007A909C /* BasicHeaderCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05647D111D906F63007A909C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		12FA63D3B12228104043DB32 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D18C3D080BF294296D544365 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D2C75F80D4F1DDA6F0179BEB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MessagesExtension/Pods-MessagesExtension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E08FB5A9573AD37E101D8106 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Poll/Pods-Poll-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1A1B1E7FD84737C6C8B7942 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MessagesExtension/Pods-MessagesExtension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		0508B8011D9076B3001BDEE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0508B8081D9076B3001BDEE5 /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0508B80A1D9076B3001BDEE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0508B8121D9076B3001BDEE5 /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0539BA811D8E524800B609D0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0539BAA41D8E55E200B609D0 /* Pollz.swift in Sources */,
+				0539BAB21D8E639B00B609D0 /* PollsViewModel.swift in Sources */,
+				0539BAAF1D8E633900B609D0 /* PollsViewController.swift in Sources */,
+				0539BAB51D8E646400B609D0 /* Question.swift in Sources */,
+				05647D061D8F71DA007A909C /* BasicHeaderCell.swift in Sources */,
+				0539BAB91D8E656A00B609D0 /* Poll.swift in Sources */,
+				0539BAB71D8E651600B609D0 /* AnswerOption.swift in Sources */,
+				05647CFE1D8F5085007A909C /* QuestionCell.swift in Sources */,
+				055328A31D8EBDC7006FC76E /* CreatePollViewController.swift in Sources */,
+				05647D021D8F561C007A909C /* CreatePollFooterCell.swift in Sources */,
+				055328A71D8F4350006FC76E /* CreatePollSectionModel.swift in Sources */,
+				0539BABC1D8E682C00B609D0 /* UIStoryboard+Extensions.swift in Sources */,
+				0539BAAD1D8E617D00B609D0 /* Presentable.swift in Sources */,
+				0539BABF1D8E737200B609D0 /* PollSectionModel.swift in Sources */,
+				0539BAC71D8E77E500B609D0 /* NewPollCell.swift in Sources */,
 				0539BA8E1D8E524800B609D0 /* MessagesViewController.swift in Sources */,
+				0599822F1E20B9F000873337 /* CreatePollAction.swift in Sources */,
+				05647D0E1D8F7903007A909C /* CreatePollValidator.swift in Sources */,
+				055328A51D8EC766006FC76E /* CreatePollViewModel.swift in Sources */,
+				05647D0A1D8F7431007A909C /* AnswerOptionCell.swift in Sources */,
+				0539BAC31D8E753700B609D0 /* PollCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05647D0F1D906F63007A909C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +712,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		0508B8131D9076B3001BDEE5 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0508B8141D9076B3001BDEE5 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		0539BA8F1D8E524800B609D0 /* MainInterface.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -239,6 +731,58 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0508B8181D9076B3001BDEE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = F7AL96RPTB;
+				INFOPLIST_FILE = BottleIntent/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.BottleIntent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		0508B8191D9076B3001BDEE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = F7AL96RPTB;
+				INFOPLIST_FILE = BottleIntent/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.BottleIntent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		0508B81B1D9076B3001BDEE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = F7AL96RPTB;
+				INFOPLIST_FILE = BottleIntentUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.BottleIntentUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		0508B81C1D9076B3001BDEE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = F7AL96RPTB;
+				INFOPLIST_FILE = BottleIntentUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.BottleIntentUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		0539BA951D8E524800B609D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -280,11 +824,13 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -323,21 +869,24 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		0539BA981D8E524800B609D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C972EAA80DB4A7E3C8437D6 /* Pods-MessagesExtension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
-				DEVELOPMENT_TEAM = U8XN6EMRDC;
+				DEVELOPMENT_TEAM = 7KJQYUXKM6;
 				INFOPLIST_FILE = MessagesExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.saltar.Poll.MessagesExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.saltarshop.Poll.MessagesExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -346,12 +895,13 @@
 		};
 		0539BA991D8E524800B609D0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09D30C96B53D220E94C92626 /* Pods-MessagesExtension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
-				DEVELOPMENT_TEAM = U8XN6EMRDC;
+				DEVELOPMENT_TEAM = 7KJQYUXKM6;
 				INFOPLIST_FILE = MessagesExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.saltar.Poll.MessagesExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.saltarshop.Poll.MessagesExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -360,13 +910,16 @@
 		};
 		0539BA9C1D8E524800B609D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91AC2A4938085FFE3B5F6D31 /* Pods-Poll.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = U8XN6EMRDC;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 7KJQYUXKM6;
 				INFOPLIST_FILE = Poll/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = com.saltar.Poll;
+				PRODUCT_BUNDLE_IDENTIFIER = com.saltarshop.Poll;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -374,21 +927,68 @@
 		};
 		0539BA9D1D8E524800B609D0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7E54836882BFB983FA33273 /* Pods-Poll.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = U8XN6EMRDC;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 7KJQYUXKM6;
 				INFOPLIST_FILE = Poll/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = com.saltar.Poll;
+				PRODUCT_BUNDLE_IDENTIFIER = com.saltarshop.Poll;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		05647D1D1D906F63007A909C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = F7AL96RPTB;
+				INFOPLIST_FILE = "Poll Intent/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test.Poll-Intent";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		05647D1E1D906F63007A909C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = F7AL96RPTB;
+				INFOPLIST_FILE = "Poll Intent/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test.Poll-Intent";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0508B8171D9076B3001BDEE5 /* Build configuration list for PBXNativeTarget "BottleIntent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0508B8181D9076B3001BDEE5 /* Debug */,
+				0508B8191D9076B3001BDEE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0508B81A1D9076B3001BDEE5 /* Build configuration list for PBXNativeTarget "BottleIntentUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0508B81B1D9076B3001BDEE5 /* Debug */,
+				0508B81C1D9076B3001BDEE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		0539BA781D8E524800B609D0 /* Build configuration list for PBXProject "Poll" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -405,6 +1005,7 @@
 				0539BA991D8E524800B609D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0539BA9B1D8E524800B609D0 /* Build configuration list for PBXNativeTarget "Poll" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +1014,16 @@
 				0539BA9D1D8E524800B609D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05647D1F1D906F63007A909C /* Build configuration list for PBXNativeTarget "Poll Intent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05647D1D1D906F63007A909C /* Debug */,
+				05647D1E1D906F63007A909C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
