@@ -10,6 +10,7 @@ import Foundation
 
 enum CreatePollAction {
     case AddOption
+    case RemoveOption
     case CreatePoll
     case NoAction
 }

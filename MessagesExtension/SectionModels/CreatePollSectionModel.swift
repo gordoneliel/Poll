@@ -42,10 +42,9 @@ extension CreatePollSectionModel: SectionModelType {
 }
 
 struct AnswerOptionCellViewModel {
-    let answerOptions: Variable<[String]>
+    let answerOptions: Variable<String>
 }
 
 struct QuestionCellViewModel {
     let content: Variable<String>
-//    let question: Variable<Question>
 }

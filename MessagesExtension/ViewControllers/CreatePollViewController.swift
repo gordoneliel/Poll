@@ -30,7 +30,7 @@ class CreatePollViewController: UIViewController {
         createPollViewModel.createPollAction
             .asObservable()
             .subscribe(onNext: { action in
-            
+            createPollViewModel.executeAction(action: action)
         }).addDisposableTo(rx_disposeBag)
         
         setup(createPollViewModel: createPollViewModel)

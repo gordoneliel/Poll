@@ -19,8 +19,10 @@ struct CreatePollViewModel {
     //Datasource
     let dataSource = RxCollectionViewSectionedReloadDataSource<CreatePollSectionModel>()
     let createPollSectionItems: Observable<[CreatePollSectionModel]>?
+    
     var question: Variable<String> = Variable("Your question here")
     var answerOptions: Variable<[String]> = Variable([])
+    
     let createPollEnabled: Driver<Bool>
     let validatedQuestion: Driver<ValidationResult>
     let validatedAnswerOptions: Driver<ValidationResult>
@@ -30,6 +32,7 @@ struct CreatePollViewModel {
     init(createPollTaps: Driver<Void>) {
         
         let pollAction = createPollAction
+        
         // Validations
         let validationService = ValidationService.sharedInstance
         
@@ -50,6 +53,7 @@ struct CreatePollViewModel {
             answerOptions.asDriver()
         ){ return ($0, $1) }
 
+        // Create a poll from Question and answer options
         createdPoll = createPollTaps
             .asObservable()
             .withLatestFrom(validatedQuestionAndAnswers)
@@ -80,7 +84,7 @@ struct CreatePollViewModel {
         let answerOptionSection = Observable.just(
             CreatePollSectionModel.answerOption(
                 title: "Options",
-                items: [AnswerOptionCellViewModel(answerOptions: answerOptions)]
+                items: [AnswerOptionCellViewModel(answerOptions: Variable(""))]
             )
         )
         
@@ -130,6 +134,18 @@ struct CreatePollViewModel {
             default: return UICollectionReusableView()
             }
         }
-        
+    }
+    
+    func executeAction(action: CreatePollAction) {
+        switch action {
+        case .AddOption:
+            break
+        case .RemoveOption:
+            break
+        case .CreatePoll:
+            break
+        case .NoAction:
+            break
+        }
     }
 }

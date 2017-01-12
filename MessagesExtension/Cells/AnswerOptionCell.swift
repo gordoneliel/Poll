@@ -13,7 +13,6 @@ class AnswerOptionCell: UICollectionViewCell {
     @IBOutlet weak var answerOptionField: UITextField!
     var answerOptionCellViewModel: AnswerOptionCellViewModel? {
         didSet {
-            answerOptionField.placeholder = answerOptionCellViewModel?.answerOptions.value.first
         }
     }
     
